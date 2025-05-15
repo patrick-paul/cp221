@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Patrick Shao's Portfolio - Web Development Projects"
+    />
+    <meta
+      name="keywords"
+      content="web development, portfolio, projects, Patrick Shao, cpage, Trinity, poultry management"
+    />
+    <meta name="author" content="Patrick Shao" />
+    <title>Portfolio | Patrick Shao</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Print styles -->
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="shortcut icon" href="./assets/man.png">
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button id="themeToggle" aria-label="Toggle dark/light mode">
+        <svg
+          class="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg
+          class="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Animated Shapes Background -->
+    <div class="shape-container">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Diagonal Navigation -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="logo">PS</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Portfolio Hero Section -->
+      <section class="portfolio-hero">
+        <div class="section-header">
+          <h1>My <span class="highlight">Projects</span></h1>
+          <p>A showcase of my web development work</p>
+        </div>
+      </section>
+
+      <!-- Portfolio Projects -->
+      <section class="projects-grid reveal">
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/cpage.png"
+              alt="CPage Website"
+              usemap="#cpage-map"
+            />
+            <!-- Image Map -->
+            <map name="cpage-map">
+              <area
+                shape="rect"
+                coords="50,50,200,150"
+                href="#cpage-header"
+                alt="CPage Header"
+                title="View CPage Header"
+              />
+              <area
+                shape="rect"
+                coords="250,100,400,200"
+                href="#cpage-features"
+                alt="CPage Features"
+                title="View CPage Features"
+              />
+              <area
+                shape="rect"
+                coords="100,250,300,350"
+                href="#cpage-footer"
+                alt="CPage Footer"
+                title="View CPage Footer"
+              />
+            </map>
+          </div>
+          <div class="project-info">
+            <h2>CPage</h2>
+            <p class="project-type">Web Platform</p>
+            <p class="project-description">
+              A comprehensive web platform for connecting businesses and
+              customers, featuring responsive design and modern UI/UX
+              principles.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+            <button class="show-details-btn" data-project="cpage">
+              Show Details
+            </button>
+            <div class="project-details" id="cpage-details">
+              <div class="details-section" id="cpage-header">
+                <h3>About CPage</h3>
+                <p>
+                  CPage (www.cpage.co.tz) is a web platform designed to provide
+                  businesses in Tanzania with an online presence. The platform
+                  features a modern design with easy navigation and robust
+                  functionality.
+                </p>
+              </div>
+              <div class="details-section" id="cpage-features">
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Responsive design that works on all devices</li>
+                  <li>Business listings with detailed profiles</li>
+                  <li>Search functionality with filtering options</li>
+                  <li>User accounts with personalized dashboards</li>
+                  <li>Integrated contact forms and messaging system</li>
+                </ul>
+              </div>
+              <div class="details-section" id="cpage-footer">
+                <h3>My Role</h3>
+                <p>As the lead developer, I was responsible for:</p>
+                <ul>
+                  <li>Developing the frontend interface</li>
+                  <li>Implementing responsive designs</li>
+                  <li>Integrating with backend services</li>
+                  <li>Optimizing for performance and SEO</li>
+                </ul>
+              </div>
+              <a
+                href="https://www.cpage.co.tz"
+                class="visit-site-btn"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/trinity.png"
+              alt="Trinity Poultry Management System"
+            />
+          </div>
+          <div class="project-info">
+            <h2>Trinity</h2>
+            <p class="project-type">Poultry Management System</p>
+            <p class="project-description">
+              A comprehensive system for managing poultry farms, tracking
+              inventory, monitoring health, and optimizing production.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+            <button class="show-details-btn" data-project="trinity">
+              Show Details
+            </button>
+            <div class="project-details" id="trinity-details">
+              <div class="details-section">
+                <h3>About Trinity</h3>
+                <p>
+                  Trinity is a comprehensive poultry management system designed
+                  to help farmers monitor and optimize their poultry operations.
+                  The system provides tools for tracking inventory, monitoring
+                  health, managing feed, and analyzing production data.
+                </p>
+              </div>
+              <div class="details-section">
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Dashboard with real-time statistics and analytics</li>
+                  <li>
+                    Inventory management for feed, medication, and equipment
+                  </li>
+                  <li>Health monitoring and vaccination scheduling</li>
+                  <li>Production tracking and reporting</li>
+                  <li>Financial management and expense tracking</li>
+                  <li>Mobile-responsive design for on-the-go management</li>
+                </ul>
+              </div>
+              <div class="details-section">
+                <h3>My Role</h3>
+                <p>For this project, I was responsible for:</p>
+                <ul>
+                  <li>Designing the user interface and experience</li>
+                  <li>Developing the frontend and backend components</li>
+                  <li>Implementing database design and optimization</li>
+                  <li>Creating reporting and analytics features</li>
+                  <li>Testing and quality assurance</li>
+                </ul>
+              </div>
+              <a
+                href="https://app.trinitypoultry.co.tz/dashboard.php"
+                class="visit-site-btn"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/ssd.png" alt="Swahili Spam Detection Model" />
+          </div>
+          <div class="project-info">
+            <h2>Swahili Spam Detector</h2>
+            <p class="project-type">NLP Machine Learning Model</p>
+            <p class="project-description">
+              A machine learning model designed to detect and filter spam
+              messages in Swahili language, helping protect users from
+              fraudulent communications.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>NLTK</span>
+              <span>Flask</span>
+            </div>
+            <button class="show-details-btn" data-project="swahili">
+              Show Details
+            </button>
+            <div class="project-details" id="swahili-details">
+              <div class="details-section">
+                <h3>About the Project</h3>
+                <p>
+                  This Swahili spam detection model addresses the growing
+                  problem of spam messages in East Africa. By leveraging natural
+                  language processing techniques specifically tuned for Swahili
+                  language patterns, the model achieves high accuracy in
+                  identifying unwanted messages.
+                </p>
+              </div>
+              <div class="details-section">
+                <h3>Key Features</h3>
+                <ul>
+                  <li>98.2% detection accuracy on test datasets</li>
+                  <li>
+                    Custom tokenization for Swahili language peculiarities
+                  </li>
+                  <li>Low false positive rate (under 0.5%)</li>
+                  <li>Lightweight model suitable for mobile applications</li>
+                  <li>API endpoints for easy integration</li>
+                </ul>
+              </div>
+              <div class="details-section">
+                <h3>Implementation</h3>
+                <p>
+                  The model was built using a corpus of over 10,000 manually
+                  labeled Swahili messages. I employed a combination of
+                  traditional ML techniques and deep learning approaches,
+                  ultimately selecting a fine-tuned BERT model with custom
+                  adaptations for Swahili linguistic features. The system is
+                  deployed as a Flask API service with Docker containerization.
+                </p>
+              </div>
+              <a
+                href="https://ssd.cpage.co.tz/"
+                class="visit-site-btn"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/techblog.png" alt="Personal Blog Project" />
+          </div>
+          <div class="project-info">
+            <h2>Tech Blog</h2>
+            <p class="project-type">Personal Blog</p>
+            <p class="project-description">
+              A personal blog focused on technology trends, web development
+              tutorials, and computer science topics.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>WordPress</span>
+            </div>
+            <button class="show-details-btn" data-project="blog">
+              Show Details
+            </button>
+            <div class="project-details" id="blog-details">
+              <div class="details-section">
+                <h3>About the Blog</h3>
+                <p>
+                  My personal technology blog is a platform where I share
+                  insights, tutorials, and thoughts on web development, emerging
+                  technologies, and my journey as a computer science student.
+                </p>
+              </div>
+              <div class="details-section">
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Clean, responsive design optimized for reading</li>
+                  <li>Category-based organization of content</li>
+                  <li>Search functionality</li>
+                  <li>Comment system for engagement</li>
+                  <li>Newsletter subscription option</li>
+                </ul>
+              </div>
+              <div class="details-section">
+                <h3>Implementation</h3>
+                <p>
+                  The blog was built using WordPress with custom theme
+                  development to achieve the desired design and functionality. I
+                  focused on optimization for both performance and SEO to ensure
+                  good visibility and user experience.
+                </p>
+              </div>
+              <a
+                href="https://www.patrick.cpage.co.tz"
+                class="visit-site-btn"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section reveal">
+        <h2>Ready to start your project?</h2>
+        <p>Let's collaborate to bring your vision to life</p>
+        <a href="contact.html" class="cta-button ripple">Contact Me</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Patrick Shao</h3>
+          <p>Web Developer & CS Student</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/patrick-paul" aria-label="GitHub">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/patrick_forreal" aria-label="Twitter">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Patrick Shao. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>

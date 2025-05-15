@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey - Patrick Shao's Web Development Services">
+    <meta name="keywords" content="survey, feedback, web development, Patrick Shao">
+    <meta name="author" content="Patrick Shao">
+    <title>Survey | Patrick Shao</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Print styles -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="shortcut icon" href="./assets/man.png">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark/light mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </div>
+
+    <!-- Animated Shapes Background -->
+    <div class="shape-container">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Diagonal Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">PS</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="survey.html">Survey</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Survey Hero Section -->
+        <section class="survey-hero">
+            <div class="section-header">
+                <h1>Your <span class="highlight">Feedback</span></h1>
+                <p>Help me improve my services by sharing your thoughts</p>
+            </div>
+        </section>
+
+        <!-- Survey Form -->
+        <section class="survey-content reveal">
+            <div class="survey-intro">
+                <h2>I Value Your Opinion</h2>
+                <p>Your feedback is essential for me to continue improving my web development services. Please take a moment to complete this brief survey. Your responses will be kept confidential and will only be used to enhance my work.</p>
+            </div>
+            
+            <form id="surveyForm" class="survey-form">
+                <div class="form-group">
+                    <label for="name">Name (Optional)</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label>How did you hear about my services?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="social" name="referral" value="social">
+                            <label for="social">Social Media</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="search" name="referral" value="search">
+                            <label for="search">Search Engine</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="referral" name="referral" value="referral">
+                            <label for="referral">Referral</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other" name="referral" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Which services are you interested in? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="webDesign" name="interests" value="webDesign">
+                            <label for="webDesign">Web Design</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="webDev" name="interests" value="webDev">
+                            <label for="webDev">Web Development</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="ecommerce" name="interests" value="ecommerce">
+                            <label for="ecommerce">E-Commerce Solutions</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="maintenance" name="interests" value="maintenance">
+                            <label for="maintenance">Website Maintenance</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Rate the importance of the following aspects when choosing a web developer:</label>
+                    
+                    <div class="rating-item">
+                        <span class="rating-label">Design Quality</span>
+                        <div class="rating-options">
+                            <div class="rating-option">
+                                <input type="radio" id="design1" name="designRating" value="1" required>
+                                <label for="design1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="design2" name="designRating" value="2">
+                                <label for="design2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="design3" name="designRating" value="3">
+                                <label for="design3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="design4" name="designRating" value="4">
+                                <label for="design4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="design5" name="designRating" value="5">
+                                <label for="design5">5</label>
+                            </div>
+                        </div>
+                        <div class="rating-labels">
+                            <span>Not Important</span>
+                            <span>Very Important</span>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <span class="rating-label">Technical Expertise</span>
+                        <div class="rating-options">
+                            <div class="rating-option">
+                                <input type="radio" id="tech1" name="techRating" value="1" required>
+                                <label for="tech1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tech2" name="techRating" value="2">
+                                <label for="tech2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tech3" name="techRating" value="3">
+                                <label for="tech3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tech4" name="techRating" value="4">
+                                <label for="tech4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tech5" name="techRating" value="5">
+                                <label for="tech5">5</label>
+                            </div>
+                        </div>
+                        <div class="rating-labels">
+                            <span>Not Important</span>
+                            <span>Very Important</span>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <span class="rating-label">Communication</span>
+                        <div class="rating-options">
+                            <div class="rating-option">
+                                <input type="radio" id="comm1" name="commRating" value="1" required>
+                                <label for="comm1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="comm2" name="commRating" value="2">
+                                <label for="comm2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="comm3" name="commRating" value="3">
+                                <label for="comm3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="comm4" name="commRating" value="4">
+                                <label for="comm4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="comm5" name="commRating" value="5">
+                                <label for="comm5">5</label>
+                            </div>
+                        </div>
+                        <div class="rating-labels">
+                            <span>Not Important</span>
+                            <span>Very Important</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback">Additional Feedback or Suggestions</label>
+                    <textarea id="feedback" name="feedback" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" id="surveySubmit">
+                        <span class="btn-text">Submit Survey</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Patrick Shao</h3>
+                <p>Web Developer & CS Student</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/patrick-paul" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a></li>
+                        <li><a href="https://x.com/patrick_forreal" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Patrick Shao. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/survey.js"></script>
+</body>
+</html>

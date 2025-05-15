@@ -1,0 +1,121 @@
+/* 
+============================
+PATRICK SHAO - PORTFOLIO
+============================
+Print Stylesheet
+*/
+
+@media print {
+  /* Hide elements not needed for print */
+  nav,
+  .theme-toggle,
+  .shape-container,
+  .hamburger,
+  .cta-section,
+  .cta-button,
+  .cta-container,
+  footer,
+  .social-links,
+  .contact-form-container,
+  iframe,
+  .show-details-btn,
+  .project-details {
+    display: none !important;
+  }
+
+  /* General adjustments */
+  body {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  /* Show URLs after links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  /* Don't show URLs for internal links */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* Improve readability */
+  p,
+  h2,
+  h3,
+  h4 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  /* Specific adjustments for About page */
+  .about-content {
+    display: block;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+    margin-bottom: 20pt;
+  }
+
+  .profile-image {
+    max-width: 200pt;
+    margin: 0 auto 20pt;
+  }
+
+  .skills-section,
+  .education-section {
+    page-break-inside: avoid;
+  }
+
+  .skills-list ul li {
+    display: inline-block;
+    margin-right: 10pt;
+    background: none;
+    padding: 0;
+  }
+
+  /* Add page information */
+  @page {
+    margin: 2cm;
+  }
+
+  /* Add header with name */
+  @page {
+    @top-center {
+      content: "Patrick Shao - Web Developer";
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  /* Add page numbers */
+  @page {
+    @bottom-center {
+      content: "Page " counter(page);
+    }
+  }
+}

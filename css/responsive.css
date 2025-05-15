@@ -1,0 +1,286 @@
+/* 
+============================
+PATRICK SHAO - PORTFOLIO
+============================
+Responsive Stylesheet
+*/
+
+/* Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Medium to Large Desktops (992px - 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .typewriter {
+    font-size: 1.8rem;
+  }
+
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets to Small Desktops (768px - 991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .nav-container {
+    padding: 1rem;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .typewriter-container {
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+  }
+
+  .typewriter {
+    font-size: 1.6rem;
+  }
+
+  .cta-container {
+    text-align: center;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .profile-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .project-card:nth-child(even) {
+    direction: ltr;
+  }
+
+  .project-image {
+    max-height: 300px;
+  }
+
+  .featured-project {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+/* Mobile Devices (576px - 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  section {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    transform: translateY(-150%);
+    transition: transform var(--transition-normal);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: var(--spacing-md);
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .typewriter {
+    font-size: 1.4rem;
+  }
+
+  .skills-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-list ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skills-list ul li {
+    display: inline-block;
+  }
+
+  .rating-options {
+    justify-content: space-around;
+  }
+
+  .rating-option {
+    width: auto;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Devices (Up to 575px) */
+@media (max-width: 575px) {
+  html {
+    font-size: 13px;
+  }
+
+  .nav-container {
+    padding: 0.8rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .project-tech {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-tech span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode Navigation Adjustments */
+@media (max-width: 767px) {
+  body.dark-mode .nav-links {
+    background-color: var(--bg-color);
+  }
+}
+
+/* Print Styles (handled in print.css) */
