@@ -1,7 +1,7 @@
 # Patrick Shao - Portfolio Website
 
 A professional portfolio website for Patrick Shao, a BSc. Computer Science student at the University of Dodoma and a freelance web developer.
-Link to preview: http://patrick.cpage.co.tz/
+Link to preview: https://patrick.cpage.co.tz/
 Link to github: https://github.com/patrick-paul/cp221
 
 ## Project Overview
