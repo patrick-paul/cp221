@@ -1,10 +1,10 @@
-# Patric Shao - Portfolio Website
+# Patrick Shao - Portfolio Website
 
-A professional portfolio website for Patric Shao, a BSc. Computer Science student at the University of Dodoma and a freelance web developer.
+A professional portfolio website for Patrick Shao, a BSc. Computer Science student at the University of Dodoma and a freelance web developer.
 
 ## Project Overview
 
-This portfolio website showcases Patric's skills, projects, and services in a visually striking and unique design. The website is built using only HTML, CSS, and JavaScript, with a focus on creative layouts, smooth animations, and interactive elements.
+This portfolio website showcases Patrick's skills, projects, and services in a visually striking and unique design. The website is built using only HTML, CSS, and JavaScript, with a focus on creative layouts, smooth animations, and interactive elements.
 
 ## Features
 
@@ -24,7 +24,7 @@ This portfolio website showcases Patric's skills, projects, and services in a vi
 ## Pages
 
 1. **Homepage**: Features a dynamic hero section with animated text and a subtle parallax background.
-2. **About**: Displays Patric's profile, skills, and education with a Google Map of Dodoma, Tanzania.
+2. **About**: Displays Patrick's profile, skills, and education with a Google Map of Dodoma, Tanzania.
 3. **Portfolio**: Showcases projects with interactive cards and detailed information.
 4. **Contact**: Includes a form with validation and real-time feedback.
 5. **Survey**: Collects feedback with various form elements and validation.
@@ -73,7 +73,7 @@ This portfolio website showcases Patric's skills, projects, and services in a vi
 
 1. Clone the repository:
    \`\`\`
-   git clone https://github.com/username/patric-shao-portfolio.git
+   git clone https://github.com/username/patrick-shao-portfolio.git
    \`\`\`
 
 2. Open the project in your code editor.
@@ -103,4 +103,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Created by [Your Name] for Patric Shao's portfolio website.
+Created by Patrick Paul Shao for Patrick Shao's portfolio website.
