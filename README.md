@@ -2,10 +2,11 @@
 
 A professional portfolio website for Patrick Shao, a BSc. Computer Science student at the University of Dodoma and a freelance web developer.
 
-Link to preview:  
+
+**Link to Preview:** 
 https://patrick.cpage.co.tz/
 
-Link to GitHub:  
+**Link to GitHub:**  
 https://github.com/patrick-paul/cp221
 
 
@@ -79,9 +80,9 @@ This portfolio website showcases Patrick's skills, projects, and services in a v
 ## Installation and Usage
 
 1. Clone the repository:
-   \`\`\`
+    ```bash
    git clone https://github.com/patrick-paul/cp221.git
-   \`\`\`
+   ```
 
 2. Open the project in your code editor.
 
