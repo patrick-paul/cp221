@@ -111,4 +111,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Created by Patrick Paul Shao for Patrick Shao's portfolio website.
+Created by `Patrick Paul Shao` for Patrick Shao's portfolio website.
